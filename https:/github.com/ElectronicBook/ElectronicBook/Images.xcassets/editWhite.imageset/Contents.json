@@ -2,12 +2,13 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "editWhite.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "doskaiPhone@2x.png"
+      "filename" : "editWhite@2x.png"
     },
     {
       "idiom" : "universal",

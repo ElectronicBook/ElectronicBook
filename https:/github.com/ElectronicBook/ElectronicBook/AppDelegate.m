@@ -45,13 +45,19 @@
     //初始化tabBar控制器
     UITabBarController *barController = [[UITabBarController alloc] init];
     barController.viewControllers = @[first,second,third,fourth];
+    [barController.tabBar setBackgroundImage:[UIImage imageNamed:@"barBackground"]];
+    barController.tabBar.shadowImage = [[UIImage alloc]init];
+    [barController prefersStatusBarHidden];
     
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = barController;
     [self.window makeKeyAndVisible];
     
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -104,7 +104,6 @@
 				0CAFD8D31B43824D00DC204F /* view */,
 				0CAFD8D21B43823300DC204F /* controller */,
 				0CAFD8D11B43822D00DC204F /* model */,
-				0CAFD8991B4381D100DC204F /* LaunchScreen.xib */,
 				0CAFD88A1B4381D100DC204F /* Supporting Files */,
 			);
 			path = ElectronicBook;
@@ -164,6 +163,7 @@
 		0CAFD8D31B43824D00DC204F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				0CAFD8991B4381D100DC204F /* LaunchScreen.xib */,
 				0CAFD8B51B4381F200DC204F /* FirstViewController.xib */,
 				0CAFD8BE1B4381F200DC204F /* SecondViewController.xib */,
 				0CAFD8C11B4381F200DC204F /* ThirdViewController.xib */,
