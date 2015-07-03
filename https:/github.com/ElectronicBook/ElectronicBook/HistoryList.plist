@@ -5,7 +5,7 @@
 	<dict>
 		<key>date</key>
 		<string>2003-4-2</string>
-		<key>imcome</key>
+		<key>income</key>
 		<integer>0</integer>
 		<key>expenditure</key>
 		<integer>100</integer>
