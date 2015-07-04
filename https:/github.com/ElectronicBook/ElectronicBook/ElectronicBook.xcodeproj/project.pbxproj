@@ -10,16 +10,19 @@
 		0C1178A41B466B860003B7CF /* BaseBill.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1178A11B466B860003B7CF /* BaseBill.m */; };
 		0C1178A51B466B860003B7CF /* BaseBillManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1178A21B466B860003B7CF /* BaseBillManager.m */; };
 		0C1178A81B466BA20003B7CF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C1178A61B466BA20003B7CF /* Model.xcdatamodeld */; };
+		0CA3E3F61B478D570041CC48 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3E3F51B478D570041CC48 /* MyView.m */; };
+		0CA3E3F91B478F240041CC48 /* testModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3E3F81B478F240041CC48 /* testModel.m */; };
+		0CA3E3FB1B4790D80041CC48 /* testModelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3E3FA1B4790D80041CC48 /* testModelList.plist */; };
+		0CA3E4391B47BEFE0041CC48 /* ChartSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3E4371B47BEFE0041CC48 /* ChartSet.m */; };
+		0CA3E43A1B47BEFE0041CC48 /* ChartSet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3E4381B47BEFE0041CC48 /* ChartSet.xib */; };
 		0CAFD88D1B4381D100DC204F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD88C1B4381D100DC204F /* main.m */; };
 		0CAFD89B1B4381D100DC204F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8991B4381D100DC204F /* LaunchScreen.xib */; };
 		0CAFD8A71B4381D100DC204F /* ElectronicBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8A61B4381D100DC204F /* ElectronicBookTests.m */; };
 		0CAFD8C21B4381F300DC204F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B11B4381F200DC204F /* AppDelegate.m */; };
-		0CAFD8C31B4381F300DC204F /* DetailedList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B21B4381F200DC204F /* DetailedList.plist */; };
 		0CAFD8C41B4381F300DC204F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B41B4381F200DC204F /* FirstViewController.m */; };
 		0CAFD8C51B4381F300DC204F /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B51B4381F200DC204F /* FirstViewController.xib */; };
 		0CAFD8C61B4381F300DC204F /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B71B4381F200DC204F /* FourthViewController.m */; };
 		0CAFD8C71B4381F300DC204F /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B81B4381F200DC204F /* FourthViewController.xib */; };
-		0CAFD8C81B4381F300DC204F /* HistoryList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B91B4381F200DC204F /* HistoryList.plist */; };
 		0CAFD8CB1B4381F300DC204F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8BD1B4381F200DC204F /* SecondViewController.m */; };
 		0CAFD8CC1B4381F300DC204F /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8BE1B4381F200DC204F /* SecondViewController.xib */; };
 		0CAFD8CD1B4381F300DC204F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8C01B4381F200DC204F /* ThirdViewController.m */; };
@@ -43,6 +46,14 @@
 		0C1178A21B466B860003B7CF /* BaseBillManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBillManager.m; sourceTree = "<group>"; };
 		0C1178A31B466B860003B7CF /* BaseBillManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBillManager.h; sourceTree = "<group>"; };
 		0C1178A71B466BA20003B7CF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		0CA3E3F41B478D570041CC48 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		0CA3E3F51B478D570041CC48 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		0CA3E3F71B478F240041CC48 /* testModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testModel.h; sourceTree = "<group>"; };
+		0CA3E3F81B478F240041CC48 /* testModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testModel.m; sourceTree = "<group>"; };
+		0CA3E3FA1B4790D80041CC48 /* testModelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testModelList.plist; sourceTree = "<group>"; };
+		0CA3E4361B47BEFE0041CC48 /* ChartSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartSet.h; sourceTree = "<group>"; };
+		0CA3E4371B47BEFE0041CC48 /* ChartSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartSet.m; sourceTree = "<group>"; };
+		0CA3E4381B47BEFE0041CC48 /* ChartSet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartSet.xib; sourceTree = "<group>"; };
 		0CAFD8871B4381D100DC204F /* ElectronicBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectronicBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAFD88B1B4381D100DC204F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CAFD88C1B4381D100DC204F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,14 +63,12 @@
 		0CAFD8A61B4381D100DC204F /* ElectronicBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElectronicBookTests.m; sourceTree = "<group>"; };
 		0CAFD8B01B4381F200DC204F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		0CAFD8B11B4381F200DC204F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		0CAFD8B21B4381F200DC204F /* DetailedList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DetailedList.plist; path = ../DetailedList.plist; sourceTree = "<group>"; };
 		0CAFD8B31B4381F200DC204F /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ../FirstViewController.h; sourceTree = "<group>"; };
 		0CAFD8B41B4381F200DC204F /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ../FirstViewController.m; sourceTree = "<group>"; };
 		0CAFD8B51B4381F200DC204F /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FirstViewController.xib; path = ../FirstViewController.xib; sourceTree = "<group>"; };
 		0CAFD8B61B4381F200DC204F /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourthViewController.h; path = ../FourthViewController.h; sourceTree = "<group>"; };
 		0CAFD8B71B4381F200DC204F /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FourthViewController.m; path = ../FourthViewController.m; sourceTree = "<group>"; };
 		0CAFD8B81B4381F200DC204F /* FourthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FourthViewController.xib; path = ../FourthViewController.xib; sourceTree = "<group>"; };
-		0CAFD8B91B4381F200DC204F /* HistoryList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = HistoryList.plist; path = ../HistoryList.plist; sourceTree = "<group>"; };
 		0CAFD8BC1B4381F200DC204F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ../SecondViewController.h; sourceTree = "<group>"; };
 		0CAFD8BD1B4381F200DC204F /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../SecondViewController.m; sourceTree = "<group>"; };
 		0CAFD8BE1B4381F200DC204F /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SecondViewController.xib; path = ../SecondViewController.xib; sourceTree = "<group>"; };
@@ -87,6 +96,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CA3E3F01B4788C00041CC48 /* chartView */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3E3F31B4789030041CC48 /* test */,
+				0CA3E3F21B4788E90041CC48 /* view */,
+				0CA3E3F11B4788D70041CC48 /* controller */,
+			);
+			name = chartView;
+			sourceTree = "<group>";
+		};
+		0CA3E3F11B4788D70041CC48 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CAFD8BF1B4381F200DC204F /* ThirdViewController.h */,
+				0CAFD8C01B4381F200DC204F /* ThirdViewController.m */,
+				0CA3E4361B47BEFE0041CC48 /* ChartSet.h */,
+				0CA3E4371B47BEFE0041CC48 /* ChartSet.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		0CA3E3F21B4788E90041CC48 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3E3F41B478D570041CC48 /* MyView.h */,
+				0CA3E3F51B478D570041CC48 /* MyView.m */,
+				0CAFD8C11B4381F200DC204F /* ThirdViewController.xib */,
+				0CA3E4381B47BEFE0041CC48 /* ChartSet.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		0CA3E3F31B4789030041CC48 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3E3F71B478F240041CC48 /* testModel.h */,
+				0CA3E3F81B478F240041CC48 /* testModel.m */,
+				0CA3E3FA1B4790D80041CC48 /* testModelList.plist */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
 		0CAFD87E1B4381D100DC204F = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +159,7 @@
 		0CAFD8891B4381D100DC204F /* ElectronicBook */ = {
 			isa = PBXGroup;
 			children = (
+				0CA3E3F01B4788C00041CC48 /* chartView */,
 				0CAFD8D41B43829100DC204F /* other */,
 				0CAFD8D31B43824D00DC204F /* view */,
 				0CAFD8D21B43823300DC204F /* controller */,
@@ -120,8 +172,6 @@
 		0CAFD88A1B4381D100DC204F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0CAFD8B21B4381F200DC204F /* DetailedList.plist */,
-				0CAFD8B91B4381F200DC204F /* HistoryList.plist */,
 				0CAFD88B1B4381D100DC204F /* Info.plist */,
 				0CAFD88C1B4381D100DC204F /* main.m */,
 				0CAFD8CF1B43821700DC204F /* Images.xcassets */,
@@ -165,8 +215,6 @@
 				0CAFD8B41B4381F200DC204F /* FirstViewController.m */,
 				0CAFD8BC1B4381F200DC204F /* SecondViewController.h */,
 				0CAFD8BD1B4381F200DC204F /* SecondViewController.m */,
-				0CAFD8BF1B4381F200DC204F /* ThirdViewController.h */,
-				0CAFD8C01B4381F200DC204F /* ThirdViewController.m */,
 				0CAFD8B61B4381F200DC204F /* FourthViewController.h */,
 				0CAFD8B71B4381F200DC204F /* FourthViewController.m */,
 			);
@@ -179,7 +227,6 @@
 				0CAFD8991B4381D100DC204F /* LaunchScreen.xib */,
 				0CAFD8B51B4381F200DC204F /* FirstViewController.xib */,
 				0CAFD8BE1B4381F200DC204F /* SecondViewController.xib */,
-				0CAFD8C11B4381F200DC204F /* ThirdViewController.xib */,
 				0CAFD8B81B4381F200DC204F /* FourthViewController.xib */,
 			);
 			name = view;
@@ -275,9 +322,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CAFD8D01B43821700DC204F /* Images.xcassets in Resources */,
-				0CAFD8C81B4381F300DC204F /* HistoryList.plist in Resources */,
-				0CAFD8C31B4381F300DC204F /* DetailedList.plist in Resources */,
+				0CA3E3FB1B4790D80041CC48 /* testModelList.plist in Resources */,
 				0CAFD8C51B4381F300DC204F /* FirstViewController.xib in Resources */,
+				0CA3E43A1B47BEFE0041CC48 /* ChartSet.xib in Resources */,
 				0CAFD8CC1B4381F300DC204F /* SecondViewController.xib in Resources */,
 				0CAFD89B1B4381D100DC204F /* LaunchScreen.xib in Resources */,
 				0CAFD8C71B4381F300DC204F /* FourthViewController.xib in Resources */,
@@ -301,9 +348,12 @@
 			files = (
 				0CAFD8C61B4381F300DC204F /* FourthViewController.m in Sources */,
 				0CAFD8C21B4381F300DC204F /* AppDelegate.m in Sources */,
+				0CA3E3F91B478F240041CC48 /* testModel.m in Sources */,
 				0CAFD8C41B4381F300DC204F /* FirstViewController.m in Sources */,
 				0CAFD8CB1B4381F300DC204F /* SecondViewController.m in Sources */,
+				0CA3E3F61B478D570041CC48 /* MyView.m in Sources */,
 				0CAFD8CD1B4381F300DC204F /* ThirdViewController.m in Sources */,
+				0CA3E4391B47BEFE0041CC48 /* ChartSet.m in Sources */,
 				0C1178A81B466BA20003B7CF /* Model.xcdatamodeld in Sources */,
 				0C1178A51B466B860003B7CF /* BaseBillManager.m in Sources */,
 				0C1178A41B466B860003B7CF /* BaseBill.m in Sources */,

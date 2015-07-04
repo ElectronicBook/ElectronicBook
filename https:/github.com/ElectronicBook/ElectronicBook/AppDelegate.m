@@ -33,9 +33,12 @@
     [second.tabBarItem setSelectedImage:[[UIImage imageNamed:@"tabBar2Highlighted"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     //初始化第三个界面
-    ThirdViewController *third = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
-    [third.tabBarItem setImage:[[UIImage imageNamed:@"tabBar3Normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    [third.tabBarItem setSelectedImage:[[UIImage imageNamed:@"tabBar3Highlighted"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    ThirdViewController *thirdView = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
+    [thirdView.tabBarItem setImage:[[UIImage imageNamed:@"tabBar3Normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [thirdView.tabBarItem setSelectedImage:[[UIImage imageNamed:@"tabBar3Highlighted"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    UINavigationController *third = [[UINavigationController alloc] initWithRootViewController:thirdView];
+    [third.navigationBar setBackgroundImage:[UIImage imageNamed:@"barBackground"] forBarMetrics:UIBarMetricsDefault];
+    third.navigationBar.shadowImage = [[UIImage alloc]init];
     
     //初始化第四个界面
     FourthViewController *fourth = [[FourthViewController alloc] initWithNibName:@"FourthViewController" bundle:nil];
@@ -47,9 +50,7 @@
     barController.viewControllers = @[first,second,third,fourth];
     [barController.tabBar setBackgroundImage:[UIImage imageNamed:@"barBackground"]];
     barController.tabBar.shadowImage = [[UIImage alloc]init];
-    [barController prefersStatusBarHidden];
     
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = barController;
     [self.window makeKeyAndVisible];

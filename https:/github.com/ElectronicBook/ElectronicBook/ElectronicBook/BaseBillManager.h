@@ -19,8 +19,8 @@
 
 //初始化并选择需要读取的表名
 - (instancetype)initWithTableName:(NSString *)tableName;
-////获取上下文
-//- (void)saveContext;
+//获取上下文
+- (void)saveContext;
 //插入数据
 - (NSManagedObject *)createBill;
 //查询
