@@ -10,7 +10,9 @@
 		0C1178A41B466B860003B7CF /* BaseBill.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1178A11B466B860003B7CF /* BaseBill.m */; };
 		0C1178A51B466B860003B7CF /* BaseBillManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1178A21B466B860003B7CF /* BaseBillManager.m */; };
 		0C1178A81B466BA20003B7CF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C1178A61B466BA20003B7CF /* Model.xcdatamodeld */; };
-		0CA3E3F61B478D570041CC48 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3E3F51B478D570041CC48 /* MyView.m */; };
+		0CA23B241B4CC4F2009F0198 /* PieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA23B1F1B4CC4F2009F0198 /* PieChart.m */; };
+		0CA23B251B4CC4F2009F0198 /* Histogram.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA23B211B4CC4F2009F0198 /* Histogram.m */; };
+		0CA23B261B4CC4F2009F0198 /* LineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA23B231B4CC4F2009F0198 /* LineChart.m */; };
 		0CA3E3F91B478F240041CC48 /* testModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3E3F81B478F240041CC48 /* testModel.m */; };
 		0CA3E3FB1B4790D80041CC48 /* testModelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3E3FA1B4790D80041CC48 /* testModelList.plist */; };
 		0CA3E4391B47BEFE0041CC48 /* ChartSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3E4371B47BEFE0041CC48 /* ChartSet.m */; };
@@ -46,8 +48,12 @@
 		0C1178A21B466B860003B7CF /* BaseBillManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBillManager.m; sourceTree = "<group>"; };
 		0C1178A31B466B860003B7CF /* BaseBillManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBillManager.h; sourceTree = "<group>"; };
 		0C1178A71B466BA20003B7CF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		0CA3E3F41B478D570041CC48 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
-		0CA3E3F51B478D570041CC48 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		0CA23B1E1B4CC4F2009F0198 /* PieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChart.h; sourceTree = "<group>"; };
+		0CA23B1F1B4CC4F2009F0198 /* PieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChart.m; sourceTree = "<group>"; };
+		0CA23B201B4CC4F2009F0198 /* Histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Histogram.h; sourceTree = "<group>"; };
+		0CA23B211B4CC4F2009F0198 /* Histogram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Histogram.m; sourceTree = "<group>"; };
+		0CA23B221B4CC4F2009F0198 /* LineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChart.h; sourceTree = "<group>"; };
+		0CA23B231B4CC4F2009F0198 /* LineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChart.m; sourceTree = "<group>"; };
 		0CA3E3F71B478F240041CC48 /* testModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testModel.h; sourceTree = "<group>"; };
 		0CA3E3F81B478F240041CC48 /* testModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testModel.m; sourceTree = "<group>"; };
 		0CA3E3FA1B4790D80041CC48 /* testModelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testModelList.plist; sourceTree = "<group>"; };
@@ -96,9 +102,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CA23B1D1B4CC4DB009F0198 /* chart */ = {
+			isa = PBXGroup;
+			children = (
+				0CA23B1E1B4CC4F2009F0198 /* PieChart.h */,
+				0CA23B1F1B4CC4F2009F0198 /* PieChart.m */,
+				0CA23B201B4CC4F2009F0198 /* Histogram.h */,
+				0CA23B211B4CC4F2009F0198 /* Histogram.m */,
+				0CA23B221B4CC4F2009F0198 /* LineChart.h */,
+				0CA23B231B4CC4F2009F0198 /* LineChart.m */,
+			);
+			name = chart;
+			sourceTree = "<group>";
+		};
 		0CA3E3F01B4788C00041CC48 /* chartView */ = {
 			isa = PBXGroup;
 			children = (
+				0CA23B1D1B4CC4DB009F0198 /* chart */,
 				0CA3E3F31B4789030041CC48 /* test */,
 				0CA3E3F21B4788E90041CC48 /* view */,
 				0CA3E3F11B4788D70041CC48 /* controller */,
@@ -120,8 +140,6 @@
 		0CA3E3F21B4788E90041CC48 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				0CA3E3F41B478D570041CC48 /* MyView.h */,
-				0CA3E3F51B478D570041CC48 /* MyView.m */,
 				0CAFD8C11B4381F200DC204F /* ThirdViewController.xib */,
 				0CA3E4381B47BEFE0041CC48 /* ChartSet.xib */,
 			);
@@ -202,8 +220,8 @@
 			children = (
 				0C1178A01B466B860003B7CF /* BaseBill.h */,
 				0C1178A11B466B860003B7CF /* BaseBill.m */,
-				0C1178A21B466B860003B7CF /* BaseBillManager.m */,
 				0C1178A31B466B860003B7CF /* BaseBillManager.h */,
+				0C1178A21B466B860003B7CF /* BaseBillManager.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -349,9 +367,11 @@
 				0CAFD8C61B4381F300DC204F /* FourthViewController.m in Sources */,
 				0CAFD8C21B4381F300DC204F /* AppDelegate.m in Sources */,
 				0CA3E3F91B478F240041CC48 /* testModel.m in Sources */,
+				0CA23B241B4CC4F2009F0198 /* PieChart.m in Sources */,
+				0CA23B251B4CC4F2009F0198 /* Histogram.m in Sources */,
 				0CAFD8C41B4381F300DC204F /* FirstViewController.m in Sources */,
 				0CAFD8CB1B4381F300DC204F /* SecondViewController.m in Sources */,
-				0CA3E3F61B478D570041CC48 /* MyView.m in Sources */,
+				0CA23B261B4CC4F2009F0198 /* LineChart.m in Sources */,
 				0CAFD8CD1B4381F300DC204F /* ThirdViewController.m in Sources */,
 				0CA3E4391B47BEFE0041CC48 /* ChartSet.m in Sources */,
 				0C1178A81B466BA20003B7CF /* Model.xcdatamodeld in Sources */,

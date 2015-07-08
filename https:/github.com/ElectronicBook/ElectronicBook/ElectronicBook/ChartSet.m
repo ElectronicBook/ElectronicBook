@@ -7,7 +7,6 @@
 //
 
 #import "ChartSet.h"
-#import "MyView.h"
 
 @interface ChartSet ()<UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -47,6 +46,7 @@
     NSInteger drawType = [self.pickerView selectedRowInComponent:0];
     NSInteger time = [self.pickerView selectedRowInComponent:1];
     
+    //设置代理来绘制图形
     if ([self.delegate respondsToSelector:@selector(drawChartWithChartType:andTime:)]) {
         [self.delegate drawChartWithChartType:drawType andTime:time];
     }

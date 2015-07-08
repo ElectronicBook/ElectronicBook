@@ -7,41 +7,45 @@
 //
 
 #import "ThirdViewController.h"
-#import "MyView.h"
 #import "testModel.h"
 #import "ChartSet.h"
+#import "PieChart.h"
+#import "Histogram.h"
+#import "LineChart.h"
 
 @interface ThirdViewController ()<drawChartDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *chartScrollView;
-@property (strong, nonatomic) NSMutableArray *lineChartList;
-@property (strong, nonatomic) MyView *drawView;
+@property (strong, nonatomic) NSMutableArray *chartList;
+@property (strong, nonatomic) Histogram *drawView;
 
 @end
 
 @implementation ThirdViewController
 
-- (NSMutableArray *)lineChartList {
-    _lineChartList = [testModel testModelList];
-    return _lineChartList;
-}
-
 //实现ChartSet的代理方法，进行绘制
 - (void)drawChartWithChartType:(EBChartType)type andTime:(NSInteger)time {
+    NSPredicate *predicate;
     
     if (self.drawView!=nil) {
         [self.drawView removeFromSuperview];
     }
-    self.drawView = [[MyView alloc] init];
-    if (type == EBPieChart) {
+    if(type == EBPieChart) {
+        self.drawView = [[PieChart alloc] init];
         [self.drawView setFrame:CGRectMake(0, 0, self.chartScrollView.frame.size.width, self.chartScrollView.frame.size.height)];
+        predicate = [NSPredicate predicateWithFormat:@""];
     } else {
-        [self.drawView setFrame:CGRectMake(0, 0, 100*self.lineChartList.count, self.chartScrollView.frame.size.height)];
+        if(type == EBHistogram) {
+            self.drawView = [[Histogram alloc] init];
+        } else {
+            self.drawView = [[LineChart alloc] init];
+        }
+        [self.drawView setFrame:CGRectMake(0, 0, 100*self.chartList.count, self.chartScrollView.frame.size.height)];
     }
+    [self.chartList addObject:@1];
     
     [self.drawView setBackgroundColor:[UIColor clearColor]];
-    self.drawView.array = self.lineChartList;
-    self.drawView.type = type;
+    self.drawView.array = self.chartList;
     
     self.chartScrollView.contentSize = self.drawView.frame.size;
     self.chartScrollView.bounces = NO;
@@ -58,7 +62,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     
     //设置navigationBar的title
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];

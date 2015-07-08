@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MyView.h"
+
+typedef  NS_ENUM(NSInteger, EBChartType) {
+    EBHistogram = 1,
+    EBLineChart = 2,
+    EBPieChart = 3,
+};
 
 @protocol drawChartDelegate <NSObject>
 
 @optional
+
 - (void)drawChartWithChartType:(EBChartType)type andTime:(NSInteger)time;
 
 @end
