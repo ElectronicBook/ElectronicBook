@@ -25,18 +25,18 @@
     [self drawLineChart];
     [self drawHorizontalCoordinates];
     for (int i=0; i<self.array.count; i++) {
-        [self drawChartText:CGRectMake(BeginPositionX  + (i + 0.25) * Interval - 25, self.rect.size.height - [self height:i] - BeginPositionY - 20, 50, 20) andAlignment:NSTextAlignmentCenter andString:[self.array[i] stringValue]];
+        [self drawChartText:CGRectMake(BeginPositionX  + (i + 0.25) * Interval - 25, self.rect.size.height - [self height:i] - BeginPositionY - 20, 50, 20) andAlignment:NSTextAlignmentCenter andString:[[self.array[i] valueForKey:@"value" ] stringValue]];
     }
 }
 
 //绘制折线图
 - (void)drawLineChart {
     CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
-    shapeLayer.strokeColor = [UIColor greenColor].CGColor;
+    shapeLayer.strokeColor = [UIColor redColor].CGColor;
     shapeLayer.fillColor = [UIColor clearColor].CGColor;
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(BeginPositionX + Interval * 0.25, self.rect.size.height - [self height:0] - BeginPositionY)];
-    for (int i=1; i<self.array.count; i++) {
+    [path moveToPoint:CGPointMake(0, self.rect.size.height - BeginPositionY)];
+    for (int i=0; i<self.array.count; i++) {
         [path addLineToPoint:CGPointMake(BeginPositionX + (i + 0.25) * Interval, self.rect.size.height - [self height:i] - BeginPositionY)];
     }
     shapeLayer.path = path.CGPath;
@@ -52,7 +52,7 @@
     anima.keyPath = @"strokeEnd";
     //    //设置延迟两秒播放动画
     //    anima.beginTime = 2 + CACurrentMediaTime();
-    anima.duration = 2;
+    anima.duration = 1;
     anima.fromValue = [NSNumber numberWithInteger:0];
     anima.toValue = [NSNumber numberWithInteger:1];
     [layer addAnimation:anima forKey:nil];

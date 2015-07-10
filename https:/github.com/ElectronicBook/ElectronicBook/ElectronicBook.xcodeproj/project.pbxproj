@@ -13,23 +13,37 @@
 		0CA23B241B4CC4F2009F0198 /* PieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA23B1F1B4CC4F2009F0198 /* PieChart.m */; };
 		0CA23B251B4CC4F2009F0198 /* Histogram.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA23B211B4CC4F2009F0198 /* Histogram.m */; };
 		0CA23B261B4CC4F2009F0198 /* LineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA23B231B4CC4F2009F0198 /* LineChart.m */; };
-		0CA3E3F91B478F240041CC48 /* testModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3E3F81B478F240041CC48 /* testModel.m */; };
-		0CA3E3FB1B4790D80041CC48 /* testModelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3E3FA1B4790D80041CC48 /* testModelList.plist */; };
 		0CA3E4391B47BEFE0041CC48 /* ChartSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3E4371B47BEFE0041CC48 /* ChartSet.m */; };
 		0CA3E43A1B47BEFE0041CC48 /* ChartSet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3E4381B47BEFE0041CC48 /* ChartSet.xib */; };
+		0CAC308E1B4E1FC700FEC114 /* Dropdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC308D1B4E1FC700FEC114 /* Dropdown.m */; };
+		0CAC30911B4E49EE00FEC114 /* ShowTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC30901B4E49EE00FEC114 /* ShowTime.m */; };
+		0CAC30AE1B4E78C300FEC114 /* TimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC30AD1B4E78C300FEC114 /* TimeManager.m */; };
+		0CACF9E31B4F7150007E46D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CACF9E21B4F7150007E46D9 /* Images.xcassets */; };
+		0CACF9E71B4F8D78007E46D9 /* HistogramController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CACF9E51B4F8D78007E46D9 /* HistogramController.m */; };
+		0CACF9E81B4F8D78007E46D9 /* HistogramController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CACF9E61B4F8D78007E46D9 /* HistogramController.xib */; };
+		0CACF9EB1B4F92AC007E46D9 /* MySehmented.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CACF9EA1B4F92AC007E46D9 /* MySehmented.m */; };
 		0CAFD88D1B4381D100DC204F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD88C1B4381D100DC204F /* main.m */; };
 		0CAFD89B1B4381D100DC204F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8991B4381D100DC204F /* LaunchScreen.xib */; };
 		0CAFD8A71B4381D100DC204F /* ElectronicBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8A61B4381D100DC204F /* ElectronicBookTests.m */; };
-		0CAFD8C21B4381F300DC204F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B11B4381F200DC204F /* AppDelegate.m */; };
-		0CAFD8C41B4381F300DC204F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B41B4381F200DC204F /* FirstViewController.m */; };
-		0CAFD8C51B4381F300DC204F /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B51B4381F200DC204F /* FirstViewController.xib */; };
 		0CAFD8C61B4381F300DC204F /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B71B4381F200DC204F /* FourthViewController.m */; };
 		0CAFD8C71B4381F300DC204F /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8B81B4381F200DC204F /* FourthViewController.xib */; };
 		0CAFD8CB1B4381F300DC204F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8BD1B4381F200DC204F /* SecondViewController.m */; };
 		0CAFD8CC1B4381F300DC204F /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8BE1B4381F200DC204F /* SecondViewController.xib */; };
 		0CAFD8CD1B4381F300DC204F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFD8C01B4381F200DC204F /* ThirdViewController.m */; };
 		0CAFD8CE1B4381F300DC204F /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8C11B4381F200DC204F /* ThirdViewController.xib */; };
-		0CAFD8D01B43821700DC204F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFD8CF1B43821700DC204F /* Images.xcassets */; };
+		0CB1D4A71B4CEEC700E4ACB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1D4A61B4CEEC700E4ACB1 /* AppDelegate.m */; };
+		0CB1D4BF1B4CEF3700E4ACB1 /* JHChangeCellAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1D4B91B4CEF3700E4ACB1 /* JHChangeCellAlertView.m */; };
+		0CB1D4C01B4CEF3700E4ACB1 /* JHDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1D4BB1B4CEF3700E4ACB1 /* JHDataDetailViewController.m */; };
+		0CB1D4C11B4CEF3700E4ACB1 /* JHDataDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB1D4BC1B4CEF3700E4ACB1 /* JHDataDetailViewController.xib */; };
+		0CB1D4C21B4CEF3700E4ACB1 /* JHTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1D4BE1B4CEF3700E4ACB1 /* JHTitleView.m */; };
+		0CB1D4CB1B4CF02700E4ACB1 /* JHNavDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1D4C51B4CF02700E4ACB1 /* JHNavDataController.m */; };
+		0CB1D4CC1B4CF02700E4ACB1 /* JHNavDataController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB1D4C61B4CF02700E4ACB1 /* JHNavDataController.xib */; };
+		0CB1D4CD1B4CF02700E4ACB1 /* JHOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1D4C81B4CF02700E4ACB1 /* JHOneTableViewCell.m */; };
+		0CB1D4CE1B4CF02700E4ACB1 /* JHOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB1D4C91B4CF02700E4ACB1 /* JHOneTableViewCell.xib */; };
+		0CB1D4CF1B4CF02700E4ACB1 /* JHTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB1D4CA1B4CF02700E4ACB1 /* JHTitleView.xib */; };
+		0CB1D4D21B4D2DEF00E4ACB1 /* CountData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1D4D11B4D2DEF00E4ACB1 /* CountData.m */; };
+		0CF1F4211B4E943000F9585D /* PieChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF1F41F1B4E943000F9585D /* PieChartController.m */; };
+		0CF1F4221B4E943000F9585D /* PieChartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF1F4201B4E943000F9585D /* PieChartController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +68,21 @@
 		0CA23B211B4CC4F2009F0198 /* Histogram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Histogram.m; sourceTree = "<group>"; };
 		0CA23B221B4CC4F2009F0198 /* LineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChart.h; sourceTree = "<group>"; };
 		0CA23B231B4CC4F2009F0198 /* LineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChart.m; sourceTree = "<group>"; };
-		0CA3E3F71B478F240041CC48 /* testModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testModel.h; sourceTree = "<group>"; };
-		0CA3E3F81B478F240041CC48 /* testModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testModel.m; sourceTree = "<group>"; };
-		0CA3E3FA1B4790D80041CC48 /* testModelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testModelList.plist; sourceTree = "<group>"; };
 		0CA3E4361B47BEFE0041CC48 /* ChartSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartSet.h; sourceTree = "<group>"; };
 		0CA3E4371B47BEFE0041CC48 /* ChartSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartSet.m; sourceTree = "<group>"; };
 		0CA3E4381B47BEFE0041CC48 /* ChartSet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartSet.xib; sourceTree = "<group>"; };
+		0CAC308C1B4E1FC700FEC114 /* Dropdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dropdown.h; sourceTree = "<group>"; };
+		0CAC308D1B4E1FC700FEC114 /* Dropdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dropdown.m; sourceTree = "<group>"; };
+		0CAC308F1B4E49EE00FEC114 /* ShowTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowTime.h; sourceTree = "<group>"; };
+		0CAC30901B4E49EE00FEC114 /* ShowTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowTime.m; sourceTree = "<group>"; };
+		0CAC30AC1B4E78C300FEC114 /* TimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeManager.h; sourceTree = "<group>"; };
+		0CAC30AD1B4E78C300FEC114 /* TimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeManager.m; sourceTree = "<group>"; };
+		0CACF9E21B4F7150007E46D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0CACF9E41B4F8D78007E46D9 /* HistogramController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistogramController.h; sourceTree = "<group>"; };
+		0CACF9E51B4F8D78007E46D9 /* HistogramController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistogramController.m; sourceTree = "<group>"; };
+		0CACF9E61B4F8D78007E46D9 /* HistogramController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistogramController.xib; sourceTree = "<group>"; };
+		0CACF9E91B4F92AC007E46D9 /* MySehmented.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySehmented.h; sourceTree = "<group>"; };
+		0CACF9EA1B4F92AC007E46D9 /* MySehmented.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySehmented.m; sourceTree = "<group>"; };
 		0CAFD8871B4381D100DC204F /* ElectronicBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectronicBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAFD88B1B4381D100DC204F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CAFD88C1B4381D100DC204F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,11 +90,6 @@
 		0CAFD8A01B4381D100DC204F /* ElectronicBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectronicBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAFD8A51B4381D100DC204F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CAFD8A61B4381D100DC204F /* ElectronicBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElectronicBookTests.m; sourceTree = "<group>"; };
-		0CAFD8B01B4381F200DC204F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
-		0CAFD8B11B4381F200DC204F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		0CAFD8B31B4381F200DC204F /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ../FirstViewController.h; sourceTree = "<group>"; };
-		0CAFD8B41B4381F200DC204F /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ../FirstViewController.m; sourceTree = "<group>"; };
-		0CAFD8B51B4381F200DC204F /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FirstViewController.xib; path = ../FirstViewController.xib; sourceTree = "<group>"; };
 		0CAFD8B61B4381F200DC204F /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourthViewController.h; path = ../FourthViewController.h; sourceTree = "<group>"; };
 		0CAFD8B71B4381F200DC204F /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FourthViewController.m; path = ../FourthViewController.m; sourceTree = "<group>"; };
 		0CAFD8B81B4381F200DC204F /* FourthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FourthViewController.xib; path = ../FourthViewController.xib; sourceTree = "<group>"; };
@@ -81,7 +99,27 @@
 		0CAFD8BF1B4381F200DC204F /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdViewController.h; path = ../ThirdViewController.h; sourceTree = "<group>"; };
 		0CAFD8C01B4381F200DC204F /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdViewController.m; path = ../ThirdViewController.m; sourceTree = "<group>"; };
 		0CAFD8C11B4381F200DC204F /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThirdViewController.xib; path = ../ThirdViewController.xib; sourceTree = "<group>"; };
-		0CAFD8CF1B43821700DC204F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		0CB1D4A51B4CEEC700E4ACB1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0CB1D4A61B4CEEC700E4ACB1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0CB1D4B81B4CEF3700E4ACB1 /* JHChangeCellAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHChangeCellAlertView.h; sourceTree = "<group>"; };
+		0CB1D4B91B4CEF3700E4ACB1 /* JHChangeCellAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHChangeCellAlertView.m; sourceTree = "<group>"; };
+		0CB1D4BA1B4CEF3700E4ACB1 /* JHDataDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDataDetailViewController.h; sourceTree = "<group>"; };
+		0CB1D4BB1B4CEF3700E4ACB1 /* JHDataDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDataDetailViewController.m; sourceTree = "<group>"; };
+		0CB1D4BC1B4CEF3700E4ACB1 /* JHDataDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHDataDetailViewController.xib; sourceTree = "<group>"; };
+		0CB1D4BD1B4CEF3700E4ACB1 /* JHTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTitleView.h; sourceTree = "<group>"; };
+		0CB1D4BE1B4CEF3700E4ACB1 /* JHTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTitleView.m; sourceTree = "<group>"; };
+		0CB1D4C41B4CF02700E4ACB1 /* JHNavDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNavDataController.h; sourceTree = "<group>"; };
+		0CB1D4C51B4CF02700E4ACB1 /* JHNavDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNavDataController.m; sourceTree = "<group>"; };
+		0CB1D4C61B4CF02700E4ACB1 /* JHNavDataController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHNavDataController.xib; sourceTree = "<group>"; };
+		0CB1D4C71B4CF02700E4ACB1 /* JHOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHOneTableViewCell.h; sourceTree = "<group>"; };
+		0CB1D4C81B4CF02700E4ACB1 /* JHOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHOneTableViewCell.m; sourceTree = "<group>"; };
+		0CB1D4C91B4CF02700E4ACB1 /* JHOneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHOneTableViewCell.xib; sourceTree = "<group>"; };
+		0CB1D4CA1B4CF02700E4ACB1 /* JHTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHTitleView.xib; sourceTree = "<group>"; };
+		0CB1D4D01B4D2DEF00E4ACB1 /* CountData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountData.h; sourceTree = "<group>"; };
+		0CB1D4D11B4D2DEF00E4ACB1 /* CountData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountData.m; sourceTree = "<group>"; };
+		0CF1F41E1B4E943000F9585D /* PieChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartController.h; sourceTree = "<group>"; };
+		0CF1F41F1B4E943000F9585D /* PieChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartController.m; sourceTree = "<group>"; };
+		0CF1F4201B4E943000F9585D /* PieChartController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PieChartController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +156,8 @@
 		0CA3E3F01B4788C00041CC48 /* chartView */ = {
 			isa = PBXGroup;
 			children = (
+				0CAC30AB1B4E78A300FEC114 /* tool */,
 				0CA23B1D1B4CC4DB009F0198 /* chart */,
-				0CA3E3F31B4789030041CC48 /* test */,
 				0CA3E3F21B4788E90041CC48 /* view */,
 				0CA3E3F11B4788D70041CC48 /* controller */,
 			);
@@ -133,6 +171,10 @@
 				0CAFD8C01B4381F200DC204F /* ThirdViewController.m */,
 				0CA3E4361B47BEFE0041CC48 /* ChartSet.h */,
 				0CA3E4371B47BEFE0041CC48 /* ChartSet.m */,
+				0CF1F41E1B4E943000F9585D /* PieChartController.h */,
+				0CF1F41F1B4E943000F9585D /* PieChartController.m */,
+				0CACF9E41B4F8D78007E46D9 /* HistogramController.h */,
+				0CACF9E51B4F8D78007E46D9 /* HistogramController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -140,20 +182,29 @@
 		0CA3E3F21B4788E90041CC48 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				0CAC308C1B4E1FC700FEC114 /* Dropdown.h */,
+				0CAC308D1B4E1FC700FEC114 /* Dropdown.m */,
 				0CAFD8C11B4381F200DC204F /* ThirdViewController.xib */,
 				0CA3E4381B47BEFE0041CC48 /* ChartSet.xib */,
+				0CACF9E61B4F8D78007E46D9 /* HistogramController.xib */,
+				0CF1F4201B4E943000F9585D /* PieChartController.xib */,
+				0CAC308F1B4E49EE00FEC114 /* ShowTime.h */,
+				0CAC30901B4E49EE00FEC114 /* ShowTime.m */,
+				0CACF9E91B4F92AC007E46D9 /* MySehmented.h */,
+				0CACF9EA1B4F92AC007E46D9 /* MySehmented.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
 		};
-		0CA3E3F31B4789030041CC48 /* test */ = {
+		0CAC30AB1B4E78A300FEC114 /* tool */ = {
 			isa = PBXGroup;
 			children = (
-				0CA3E3F71B478F240041CC48 /* testModel.h */,
-				0CA3E3F81B478F240041CC48 /* testModel.m */,
-				0CA3E3FA1B4790D80041CC48 /* testModelList.plist */,
+				0CB1D4D01B4D2DEF00E4ACB1 /* CountData.h */,
+				0CB1D4D11B4D2DEF00E4ACB1 /* CountData.m */,
+				0CAC30AC1B4E78C300FEC114 /* TimeManager.h */,
+				0CAC30AD1B4E78C300FEC114 /* TimeManager.m */,
 			);
-			name = test;
+			name = tool;
 			sourceTree = "<group>";
 		};
 		0CAFD87E1B4381D100DC204F = {
@@ -177,6 +228,7 @@
 		0CAFD8891B4381D100DC204F /* ElectronicBook */ = {
 			isa = PBXGroup;
 			children = (
+				0CB1D4C31B4CEF7100E4ACB1 /* FIrst */,
 				0CA3E3F01B4788C00041CC48 /* chartView */,
 				0CAFD8D41B43829100DC204F /* other */,
 				0CAFD8D31B43824D00DC204F /* view */,
@@ -190,9 +242,9 @@
 		0CAFD88A1B4381D100DC204F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0CACF9E21B4F7150007E46D9 /* Images.xcassets */,
 				0CAFD88B1B4381D100DC204F /* Info.plist */,
 				0CAFD88C1B4381D100DC204F /* main.m */,
-				0CAFD8CF1B43821700DC204F /* Images.xcassets */,
 				0C1178A61B466BA20003B7CF /* Model.xcdatamodeld */,
 			);
 			name = "Supporting Files";
@@ -229,8 +281,6 @@
 		0CAFD8D21B43823300DC204F /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				0CAFD8B31B4381F200DC204F /* FirstViewController.h */,
-				0CAFD8B41B4381F200DC204F /* FirstViewController.m */,
 				0CAFD8BC1B4381F200DC204F /* SecondViewController.h */,
 				0CAFD8BD1B4381F200DC204F /* SecondViewController.m */,
 				0CAFD8B61B4381F200DC204F /* FourthViewController.h */,
@@ -243,7 +293,6 @@
 			isa = PBXGroup;
 			children = (
 				0CAFD8991B4381D100DC204F /* LaunchScreen.xib */,
-				0CAFD8B51B4381F200DC204F /* FirstViewController.xib */,
 				0CAFD8BE1B4381F200DC204F /* SecondViewController.xib */,
 				0CAFD8B81B4381F200DC204F /* FourthViewController.xib */,
 			);
@@ -253,10 +302,31 @@
 		0CAFD8D41B43829100DC204F /* other */ = {
 			isa = PBXGroup;
 			children = (
-				0CAFD8B01B4381F200DC204F /* AppDelegate.h */,
-				0CAFD8B11B4381F200DC204F /* AppDelegate.m */,
+				0CB1D4A51B4CEEC700E4ACB1 /* AppDelegate.h */,
+				0CB1D4A61B4CEEC700E4ACB1 /* AppDelegate.m */,
 			);
 			name = other;
+			sourceTree = "<group>";
+		};
+		0CB1D4C31B4CEF7100E4ACB1 /* FIrst */ = {
+			isa = PBXGroup;
+			children = (
+				0CB1D4B81B4CEF3700E4ACB1 /* JHChangeCellAlertView.h */,
+				0CB1D4B91B4CEF3700E4ACB1 /* JHChangeCellAlertView.m */,
+				0CB1D4BA1B4CEF3700E4ACB1 /* JHDataDetailViewController.h */,
+				0CB1D4BB1B4CEF3700E4ACB1 /* JHDataDetailViewController.m */,
+				0CB1D4BC1B4CEF3700E4ACB1 /* JHDataDetailViewController.xib */,
+				0CB1D4BD1B4CEF3700E4ACB1 /* JHTitleView.h */,
+				0CB1D4BE1B4CEF3700E4ACB1 /* JHTitleView.m */,
+				0CB1D4C41B4CF02700E4ACB1 /* JHNavDataController.h */,
+				0CB1D4C51B4CF02700E4ACB1 /* JHNavDataController.m */,
+				0CB1D4C61B4CF02700E4ACB1 /* JHNavDataController.xib */,
+				0CB1D4C71B4CF02700E4ACB1 /* JHOneTableViewCell.h */,
+				0CB1D4C81B4CF02700E4ACB1 /* JHOneTableViewCell.m */,
+				0CB1D4C91B4CF02700E4ACB1 /* JHOneTableViewCell.xib */,
+				0CB1D4CA1B4CF02700E4ACB1 /* JHTitleView.xib */,
+			);
+			name = FIrst;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,13 +409,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CAFD8D01B43821700DC204F /* Images.xcassets in Resources */,
-				0CA3E3FB1B4790D80041CC48 /* testModelList.plist in Resources */,
-				0CAFD8C51B4381F300DC204F /* FirstViewController.xib in Resources */,
+				0CB1D4CF1B4CF02700E4ACB1 /* JHTitleView.xib in Resources */,
+				0CB1D4CC1B4CF02700E4ACB1 /* JHNavDataController.xib in Resources */,
 				0CA3E43A1B47BEFE0041CC48 /* ChartSet.xib in Resources */,
+				0CB1D4CE1B4CF02700E4ACB1 /* JHOneTableViewCell.xib in Resources */,
+				0CACF9E31B4F7150007E46D9 /* Images.xcassets in Resources */,
+				0CF1F4221B4E943000F9585D /* PieChartController.xib in Resources */,
 				0CAFD8CC1B4381F300DC204F /* SecondViewController.xib in Resources */,
 				0CAFD89B1B4381D100DC204F /* LaunchScreen.xib in Resources */,
 				0CAFD8C71B4381F300DC204F /* FourthViewController.xib in Resources */,
+				0CB1D4C11B4CEF3700E4ACB1 /* JHDataDetailViewController.xib in Resources */,
+				0CACF9E81B4F8D78007E46D9 /* HistogramController.xib in Resources */,
 				0CAFD8CE1B4381F300DC204F /* ThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,19 +439,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CAFD8C61B4381F300DC204F /* FourthViewController.m in Sources */,
-				0CAFD8C21B4381F300DC204F /* AppDelegate.m in Sources */,
-				0CA3E3F91B478F240041CC48 /* testModel.m in Sources */,
 				0CA23B241B4CC4F2009F0198 /* PieChart.m in Sources */,
 				0CA23B251B4CC4F2009F0198 /* Histogram.m in Sources */,
-				0CAFD8C41B4381F300DC204F /* FirstViewController.m in Sources */,
+				0CB1D4CD1B4CF02700E4ACB1 /* JHOneTableViewCell.m in Sources */,
+				0CAC30AE1B4E78C300FEC114 /* TimeManager.m in Sources */,
+				0CB1D4C01B4CEF3700E4ACB1 /* JHDataDetailViewController.m in Sources */,
+				0CB1D4C21B4CEF3700E4ACB1 /* JHTitleView.m in Sources */,
 				0CAFD8CB1B4381F300DC204F /* SecondViewController.m in Sources */,
+				0CAC308E1B4E1FC700FEC114 /* Dropdown.m in Sources */,
+				0CB1D4A71B4CEEC700E4ACB1 /* AppDelegate.m in Sources */,
 				0CA23B261B4CC4F2009F0198 /* LineChart.m in Sources */,
 				0CAFD8CD1B4381F300DC204F /* ThirdViewController.m in Sources */,
+				0CB1D4CB1B4CF02700E4ACB1 /* JHNavDataController.m in Sources */,
+				0CACF9E71B4F8D78007E46D9 /* HistogramController.m in Sources */,
+				0CB1D4D21B4D2DEF00E4ACB1 /* CountData.m in Sources */,
+				0CAC30911B4E49EE00FEC114 /* ShowTime.m in Sources */,
 				0CA3E4391B47BEFE0041CC48 /* ChartSet.m in Sources */,
 				0C1178A81B466BA20003B7CF /* Model.xcdatamodeld in Sources */,
 				0C1178A51B466B860003B7CF /* BaseBillManager.m in Sources */,
+				0CACF9EB1B4F92AC007E46D9 /* MySehmented.m in Sources */,
 				0C1178A41B466B860003B7CF /* BaseBill.m in Sources */,
+				0CB1D4BF1B4CEF3700E4ACB1 /* JHChangeCellAlertView.m in Sources */,
 				0CAFD88D1B4381D100DC204F /* main.m in Sources */,
+				0CF1F4211B4E943000F9585D /* PieChartController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

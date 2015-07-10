@@ -7,48 +7,52 @@
 //
 
 #import "ChartSet.h"
+#import "Dropdown.h"
+#import "TimeManager.h"
 
-@interface ChartSet ()<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface ChartSet ()
 
-@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (strong, nonatomic) NSArray *drawType;
 @property (strong, nonatomic) NSArray *time;
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *beginDatePicker;
+@property (weak, nonatomic) IBOutlet UIDatePicker *endDatePicker;
+@property (strong, nonatomic) Dropdown *chartTypeMenu;
+@property (strong, nonatomic) Dropdown *timeIntervalMenu;
 
 @end
 
 @implementation ChartSet
 
+
+
+//返回按钮
 - (IBAction)back {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 2;
-}
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    if(condense == 0) {
-        return self.drawType.count;
-    } else {
-        return self.time.count;
-    }
-}
-
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    if(component == 0) {
-        return [self.drawType objectAtIndex:row];
-    } else {
-        return [self.time objectAtIndex:row];
-    }
-}
-
+//绘制按钮的点击事件
 - (IBAction)draw {
-    NSInteger drawType = [self.pickerView selectedRowInComponent:0];
-    NSInteger time = [self.pickerView selectedRowInComponent:1];
+    NSString *type = self.chartTypeMenu.textField.text;
+    NSString *timeInterval = self.timeIntervalMenu.textField.text;
     
-    //设置代理来绘制图形
-    if ([self.delegate respondsToSelector:@selector(drawChartWithChartType:andTime:)]) {
-        [self.delegate drawChartWithChartType:drawType andTime:time];
+    NSDate *beginDate = [TimeManager dateClearTime:[self.beginDatePicker date]withTimeIntervalType:timeInterval];
+    NSDate *endDate = [TimeManager dateClearTime:[self.endDatePicker date]withTimeIntervalType:timeInterval];
+    endDate = [TimeManager nextDate:endDate AddTimeIntervalType:timeInterval];
+
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:beginDate,@"beginDate",endDate,@"endDate",timeInterval,@"timeInterval", nil];
+    if([type isEqualToString:@"圆饼图"]) {
+        if([self.delegate respondsToSelector:@selector(drawPieChartWithTime:)]) {
+            [self.delegate drawPieChartWithTime:dic];
+        }
+    } else if([type isEqualToString:@"柱状图"]) {
+        if([self.delegate respondsToSelector:@selector(drawHistogramWithTime:andType:)]) {
+            [self.delegate drawHistogramWithTime:dic andType:@""];
+        }
+    } else {
+        if([self.delegate respondsToSelector:@selector(drawLineChartWithTime:)]) {
+            [self.delegate drawLineChartWithTime:dic];
+        }
     }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -56,10 +60,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    self.pickerView.delegate = self;
-    self.drawType = @[@"柱状图",@"折线图",@"圆饼图"];
-    self.time = @[@"日",@"月",@"年"];
+
+    self.timeIntervalMenu = [[Dropdown alloc] initWithFrame:CGRectMake(50, 160, self.view.frame.size.width-100, 30)];
+    self.timeIntervalMenu.menuArray = @[@"年",@"月",@"日"];
+    [self.view addSubview:self.timeIntervalMenu];
+    self.chartTypeMenu = [[Dropdown alloc] initWithFrame:CGRectMake(50, 100, self.view.frame.size.width-100, 30)];
+    self.chartTypeMenu.menuArray = @[@"柱状图", @"折线图", @"圆饼图"];
+    [self.view addSubview:self.chartTypeMenu];
     
 }
 

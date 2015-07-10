@@ -13,10 +13,6 @@
 @property (strong, nonatomic) NSArray *array;
 @property (assign, nonatomic)CGRect rect;
 
-@property (assign, nonatomic)int BeginPositionX;
-@property (assign, nonatomic)int BeginPositionY;
-@property (assign, nonatomic)int Interval;
-
 //计算柱状图和折线图的高度
 - (CGFloat)height:(int) i;
 //绘制文本

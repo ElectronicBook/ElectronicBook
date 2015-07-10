@@ -21,7 +21,7 @@
     if(_percent == nil) {
         NSMutableArray *per = [[NSMutableArray alloc] init];
         for(int i = 0; i<self.array.count; i++) {
-            double p = [self.array[i] doubleValue] / [[self.array valueForKeyPath:@"@sum.doubleValue"] doubleValue];
+            double p = [[self.array[i] valueForKey:@"value"] doubleValue] / [[self.array valueForKeyPath:@"@sum.value.doubleValue"] doubleValue];
             [per addObject:[NSNumber numberWithDouble:p]];
         }
         _percent = per;
@@ -51,8 +51,10 @@
         shapeLayer.strokeColor = [UIColor colorWithRed:0 green:i%2 blue:1 alpha:1].CGColor;
         
         endAngle = startAngle + [self.percent[i] doubleValue];
+        //塞贝斯路径
         UIBezierPath *circlePath = [UIBezierPath bezierPathWithArcCenter:self.center radius:50 startAngle:2*M_PI*(startAngle+0.25-[self.percent[0] doubleValue]/2) endAngle:2*M_PI*(endAngle+0.25-[self.percent[0] doubleValue]/2) clockwise:YES];
         shapeLayer.path = circlePath.CGPath;
+        //设置延迟以达到依次执行动画的效果
         [self.layer  performSelector:@selector(addSublayer:) withObject:shapeLayer afterDelay:1 * startAngle];
         [self performSelector:@selector(setAnimation:) withObject:@[shapeLayer, [NSNumber numberWithInt:i]] afterDelay:1 * startAngle];
         startAngle = endAngle;
@@ -69,6 +71,7 @@
     anima.keyPath = @"strokeEnd";
 //    //设置延迟两秒播放动画
 //    anima.beginTime = 2 + CACurrentMediaTime();
+    //动画播放时间与layer所占的百分比有关
     anima.duration = 1 * [self.percent[index] doubleValue];
     anima.fromValue = [NSNumber numberWithInteger:0];
     anima.toValue = [NSNumber numberWithInteger:1];
@@ -77,6 +80,9 @@
 
 //设置旋转角度
 - (void)Transforming:(BOOL)isForward {
+    if(self.percent.count == 0) {
+        return;
+    }
     //offset 表示selected的前一个(顺时针滚动)或后一个(逆时针滚动)元素
     NSInteger offset = isForward ? (_selected+1)%self.percent.count : (_selected-1+self.percent.count)%self.percent.count;
     //旋转，旋转值为selected和offset所占总角度的一半
@@ -87,7 +93,10 @@
 
 //返回被选中元素的信息
 - (NSString *)SelectedObejct {
-    NSString *str = [NSString stringWithFormat:@"%.2lf  %.2lf%%",[self.array[_selected] doubleValue],[self.percent[_selected] doubleValue] *100];
+    if (self.array.count == 0) {
+        return nil;
+    }
+    NSString *str = [NSString stringWithFormat:@"%@ %.2lf %.2lf%%",[self.array[_selected] valueForKey:@"name"],[[self.array[_selected] valueForKey:@"value"] doubleValue],[self.percent[_selected] doubleValue] *100];
     return str;
 }
 

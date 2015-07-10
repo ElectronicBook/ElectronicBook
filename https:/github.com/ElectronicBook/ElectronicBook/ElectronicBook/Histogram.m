@@ -7,6 +7,7 @@
 //
 
 #import "Histogram.h"
+#import "TimeManager.h"
 #define BeginPositionX 25
 #define BeginPositionY 100
 #define Interval 100
@@ -15,10 +16,15 @@
 
 //计算柱状图和折线图的高度
 - (CGFloat)height:(int) i{
-    double max = [[self.array valueForKeyPath:@"@max.doubleValue"] doubleValue];
-    double min = [[self.array valueForKeyPath:@"@min.doubleValue"] doubleValue];
+    double max = [[self.array valueForKeyPath:@"@max.value.doubleValue"] doubleValue];
+    double min = [[self.array valueForKeyPath:@"@min.value.doubleValue"] doubleValue];
     CGFloat middle = (double)(max+min)/2;
-    CGFloat height = [self.array[i] doubleValue] * (self.rect.size.height - 20 - BeginPositionY) / (2 * middle);
+    CGFloat height;
+    if(middle!=0) {
+        height = [[self.array[i] valueForKey:@"value"] doubleValue] * (self.rect.size.height - 20 - BeginPositionY) / (2 * middle);
+    } else {
+        height = 0;
+    }
     return height;
 }
 
@@ -78,12 +84,9 @@
     CGContextStrokePath(ctx);
     //写文本
     for (int i=0; i<self.array.count; i++) {
-//        NSDate *date = [self.array[i] valueForKey:@"date"];
-//        NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-//        [formatter setDateFormat:@"dd日\n"];
-//        NSString *str = [formatter stringFromDate:date];
-        NSString *str = [self.array[i] stringValue];
-        [self drawChartText:CGRectMake(BeginPositionX+i*Interval, self.rect.size.height - BeginPositionY, 50, 100) andAlignment:NSTextAlignmentCenter andString:str];
+        NSString *date = [self.array[i] valueForKey:@"date"];
+
+        [self drawChartText:CGRectMake(BeginPositionX+i*Interval, self.rect.size.height - BeginPositionY, 50, 100) andAlignment:NSTextAlignmentCenter andString:date];
     }
 }
 
@@ -92,7 +95,7 @@
     [self drawHistogram];
     [self drawHorizontalCoordinates];
     for (int i=0; i<self.array.count; i++) {
-        [self drawChartText:CGRectMake(BeginPositionX+i*Interval, self.rect.size.height - [self height:i]-125, 50, 20) andAlignment:NSTextAlignmentCenter andString:[self.array[i] stringValue]];
+        [self drawChartText:CGRectMake(BeginPositionX+i*Interval, self.rect.size.height - [self height:i]-125, 50, 20) andAlignment:NSTextAlignmentCenter andString:[[self.array[i] valueForKey:@"value"] stringValue]];
     }
 }
 

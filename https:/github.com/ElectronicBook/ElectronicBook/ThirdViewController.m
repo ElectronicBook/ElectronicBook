@@ -7,50 +7,65 @@
 //
 
 #import "ThirdViewController.h"
-#import "testModel.h"
+#import "AppDelegate.h"
 #import "ChartSet.h"
-#import "PieChart.h"
-#import "Histogram.h"
 #import "LineChart.h"
+#import "CountData.h"
+#import "PieChartController.h"
+#import "HistogramController.h"
 
 @interface ThirdViewController ()<drawChartDelegate>
 
-@property (weak, nonatomic) IBOutlet UIScrollView *chartScrollView;
 @property (strong, nonatomic) NSMutableArray *chartList;
-@property (strong, nonatomic) Histogram *drawView;
+@property (strong, nonatomic) UIViewController *chartController;
 
 @end
 
 @implementation ThirdViewController
 
-//实现ChartSet的代理方法，进行绘制
-- (void)drawChartWithChartType:(EBChartType)type andTime:(NSInteger)time {
-    NSPredicate *predicate;
-    
-    if (self.drawView!=nil) {
-        [self.drawView removeFromSuperview];
+//绘制圆饼图界面(委托)
+- (void)drawPieChartWithTime:(NSDictionary *)time {
+    //删除已有视图
+    [self deleteChartControllerView];
+    //创建圆饼图界面并将界面添加到view中
+    PieChartController *pieController = [[PieChartController alloc]initWithNibName:@"PieChartController" bundle:nil];
+    //这里在调用完setFrame时就会执行pieController的viewDidLoad方法，所以要在setFrame之前对time进行赋值
+    pieController.time = time;
+    [pieController.view setFrame:CGRectMake(0, 60, self.view.frame.size.width, self.view.frame.size.height-120)];
+    [self.view addSubview:pieController.view];
+    [self addChildViewController:pieController];
+    self.chartController = pieController;
+}
+
+//绘制柱状图界面(委托)
+- (void)drawHistogramWithTime:(NSDictionary *)time andType:(NSString *)type {
+    //删除已有视图
+    [self deleteChartControllerView];
+    //创建柱状图界面并将界面添加到view中
+    HistogramController *hisController = [[HistogramController alloc]initWithNibName:@"HistogramController" bundle:nil];
+    //这里在调用完setFrame时就会执行pieController的viewDidLoad方法，所以要在setFrame之前对time进行赋值
+    hisController.time = time;
+    [hisController.view setFrame:CGRectMake(10, 60, self.view.frame.size.width-20, self.view.frame.size.height-120)];
+    [self.view addSubview:hisController.view];
+    [self addChildViewController:hisController];
+    self.chartController = hisController;
+}
+
+////绘制折线图界面(委托)
+//- (void)drawLineChartWithTime:(NSDictionary *)time {
+//    LineChart *chart = [[LineChart alloc] init];
+//    chart.array = [CountData countLineChart:time andIsIncome:NO];
+//    [chart setFrame:CGRectMake(0, 0, 375,self.chartScrollView.frame.size.height)];
+//    [self viewSet:chart];
+//}
+
+//如果视图已存在，则删除已有视图
+- (void)deleteChartControllerView {
+    if(self.chartController != nil) {
+        [self.chartController.view removeFromSuperview];
+        [self.chartController removeFromParentViewController];
+        self.chartController = nil;
     }
-    if(type == EBPieChart) {
-        self.drawView = [[PieChart alloc] init];
-        [self.drawView setFrame:CGRectMake(0, 0, self.chartScrollView.frame.size.width, self.chartScrollView.frame.size.height)];
-        predicate = [NSPredicate predicateWithFormat:@""];
-    } else {
-        if(type == EBHistogram) {
-            self.drawView = [[Histogram alloc] init];
-        } else {
-            self.drawView = [[LineChart alloc] init];
-        }
-        [self.drawView setFrame:CGRectMake(0, 0, 100*self.chartList.count, self.chartScrollView.frame.size.height)];
-    }
-    [self.chartList addObject:@1];
-    
-    [self.drawView setBackgroundColor:[UIColor clearColor]];
-    self.drawView.array = self.chartList;
-    
-    self.chartScrollView.contentSize = self.drawView.frame.size;
-    self.chartScrollView.bounces = NO;
-    
-    [self.chartScrollView addSubview:self.drawView];
 }
 
 //跳转到设置界面

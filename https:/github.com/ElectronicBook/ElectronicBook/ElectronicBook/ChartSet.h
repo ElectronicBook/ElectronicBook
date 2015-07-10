@@ -9,16 +9,18 @@
 #import <UIKit/UIKit.h>
 
 typedef  NS_ENUM(NSInteger, EBChartType) {
-    EBHistogram = 1,
-    EBLineChart = 2,
-    EBPieChart = 3,
+    EBHistogram = 0,
+    EBLineChart = 1,
+    EBPieChart = 2,
 };
 
 @protocol drawChartDelegate <NSObject>
 
 @optional
 
-- (void)drawChartWithChartType:(EBChartType)type andTime:(NSInteger)time;
+- (void)drawPieChartWithTime:(NSDictionary *)time;
+- (void)drawHistogramWithTime:(NSDictionary *)time andType:(NSString *)type;
+- (void)drawLineChartWithTime:(NSDictionary *)time;
 
 @end
 

@@ -6,7 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChartSet">
             <connections>
-                <outlet property="pickerView" destination="n6q-n8-ncH" id="SgS-9w-eQ4"/>
+                <outlet property="beginDatePicker" destination="FOm-sW-bIa" id="5rq-ng-nEF"/>
+                <outlet property="endDatePicker" destination="On8-92-24c" id="M84-nf-lxd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,11 +16,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chartBackground" translatesAutoresizingMaskIntoConstraints="NO" id="wsh-xr-OAN">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmM-YL-HiV">
-                    <rect key="frame" x="86" y="432" width="30" height="30"/>
+                    <rect key="frame" x="90" y="565" width="30" height="30"/>
                     <state key="normal" title="绘制">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -28,22 +26,49 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="绘制类型" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXV-Cq-mwh">
-                    <rect key="frame" x="67" y="183" width="68" height="21"/>
+                    <rect key="frame" x="50" y="70" width="70" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="时间单位" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YE3-DA-Zh6">
-                    <rect key="frame" x="231" y="183" width="68" height="21"/>
+                    <rect key="frame" x="50" y="130" width="70" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6q-n8-ncH" userLabel="pickerView">
-                    <rect key="frame" x="8" y="217" width="359" height="162"/>
-                </pickerView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vv0-M6-vPA">
+                    <rect key="frame" x="50" y="190" width="70" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="FOm-sW-bIa">
+                    <rect key="frame" x="50" y="220" width="275" height="162"/>
+                    <date key="date" timeIntervalSinceReferenceDate="458116859.38112998">
+                        <!--2015-07-09 06:40:59 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="-662734800">
+                        <!--1980-01-01 11:00:00 +0000-->
+                    </date>
+                    <date key="maximumDate" timeIntervalSinceReferenceDate="1577790000">
+                        <!--2050-12-31 11:00:00 +0000-->
+                    </date>
+                </datePicker>
+                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="On8-92-24c">
+                    <rect key="frame" x="50" y="385" width="275" height="162"/>
+                    <date key="date" timeIntervalSinceReferenceDate="458116859.38112998">
+                        <!--2015-07-09 06:40:59 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="-662734800">
+                        <!--1980-01-01 11:00:00 +0000-->
+                    </date>
+                    <date key="maximumDate" timeIntervalSinceReferenceDate="1577790000">
+                        <!--2050-12-31 11:00:00 +0000-->
+                    </date>
+                </datePicker>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9R-tY-Y42">
-                    <rect key="frame" x="250" y="432" width="30" height="30"/>
+                    <rect key="frame" x="242" y="565" width="30" height="30"/>
                     <state key="normal" title="返回">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -54,9 +79,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="139.5" y="146.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="chartBackground" width="286" height="403"/>
-    </resources>
 </document>
